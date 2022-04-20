@@ -1,0 +1,42 @@
+
+### Getting Products
+@api = http://localhost:4000/products
+
+
+GET {{api}}
+
+
+### Create new product
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "MUSLERA 2 AGARRE MILITAR",
+    "description": "Riñonera multifuncional, bolsa de pierna, bolsa táctica para deportes al aire libre, bolsa impermeable, bolsas militares para pierna…",
+    "quantity": "2",
+    "sku": "12010201"
+}
+### Getting a Product
+
+GET {{api}}/2
+
+### Delete Pproduct
+
+DELETE  {{api}}/4
+
+### get total products
+
+GET {{api}}/count
+
+### update Product by id
+
+PUT {{api}}/3
+Content-Type: application/json
+
+{
+    "name":"TACTICAL S.- DEFENSA TOLE TACT TORNASOL",
+    "description":"Bastón Táctico o Extensible o telescópico No siempre es necesario portar un arma de fuego o un arma blanca para protegernos de ciertos tipos de ataque cuerpo a cuerpo (CQC) Distancia y cobertura son elementos esenciales y se puede recurrir a algún otro elemento como para trabar, cubrir o golpear.",
+    "quantity":50,
+    "sku":12040090
+}
